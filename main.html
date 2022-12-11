@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title> :: Frontend pack my__1</title>
+  <!--
+      link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+      link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+      link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+      link(rel="manifest" href="assets/site.webmanifest")
+      link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+      link(rel="shortcut icon" href="assets/favicon.ico")
+      meta(name="msapplication-TileColor" content="#ffffff")
+      meta(name="msapplication-config" content="assets/browserconfig.xml")
+      meta(name="theme-color" content="#ffffff")
+      -->
+  <meta name="description" content="Description">
+  <meta property="og:url" content="https://">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="title">
+  <meta property="twitter:title" content="title">
+  <meta property="og:description" content="description">
+  <meta property="twitter:description" content="description">
+  <meta property="og:image" content="assets/share.png">
+  <link rel="stylesheet" href="../dist/assets/css/common.css">
+  <link rel="stylesheet" href="../recomendation/css/step.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="container"> <a class="header__logo" href="index.html"> <img src="../dist/assets/img/logo-header.png"
+          alt=""></a>
+      <nav class="header__nav nav"><a class="nav__link" href="index.html#active">Активности </a><a class="nav__link"
+          href="index.html#traning">Тренировки</a><a class="nav__link" href="index.html#charging">Зарядки</a><a
+          class="nav__link" href="index.html#charging">Карта площадок</a><a class="nav__enter nav__link"
+          href="#">Профиль </a></nav>
+      <div class="burger">
+        <svg class="svgsprite _burger">
+          <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu"> <a class="nav__link" href="index.html#active">Активности </a><a class="nav__link"
+      href="index.html#traning">Тренировки</a><a class="nav__link" href="index.html#charging">Зарядки</a></div>
+  <div class="mobile-dropmenu">
+    <div class="mobile-dropmenu__top">
+      <div class="mobile-dropmenu__close">
+        <svg class="svgsprite _close-menu">
+          <use xlink:href="assets/img/sprites/svgsprites.svg#close-menu"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropmenu__nav"> <a class="nav__link" href="index.html">Главная</a><a class="nav__link"
+        href="">Карта площадок</a><a class="nav__link" href="">Вход в ЛК</a></div>
+    <div class="mobile-dropmenu__title t-sm">Напишите нам</div><a class="mobile-dropmenu__email t-sm"
+      href="mailto:support@sportsweekend.ru"> support@sportsweekend.ru</a>
+    <div class="footer__socials socials"> <a class="socials__link" href="#">
+        <svg class="svgsprite _yt">
+          <use xlink:href="assets/img/sprites/svgsprites.svg#yt"></use>
+        </svg>
+        <div class="t-sm">YouTube</div>
+      </a><a class="socials__link" href="#">
+        <svg class="svgsprite _tm">
+          <use xlink:href="assets/img/sprites/svgsprites.svg#tm"></use>
+        </svg>
+        <div class="t-sm">Telegram</div>
+      </a><a class="socials__link" href="#">
+        <svg class="svgsprite _vk">
+          <use xlink:href="assets/img/sprites/svgsprites.svg#vk"></use>
+        </svg>
+        <div class="t-sm">VKontakte</div>
+      </a></div>
+  </div>
+  <section class="offer">
+    <div class="container">
+      <div class="offer-inner d-flex a-center">
+        <div class="offer-info">
+          <h1 class="h1">Подберем идеальную тренировку</h1>
+          <div class="offer-description">
+              Пройди короткий опрос, чтобы получить наши рекомендации по наиболее подходящим тренировкам
+          </div>
+        </div>
+        <div class="offer-image">
+          <img src="img/offer-img.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Шаги формы -->
+  <div class="step-form">
+    <div class="container">
+      <div class="step-form__wrapper">
+        <div class="slide-indicators d-flex j-between a-center">
+          <div class="indicator-item d-flex a-center active">
+            <div class="indicator-bullet d-flex a-center j-center">
+              1
+            </div>
+            <p> О вас</p>
+          </div>
+          <div class="indicator-line active"></div>
+          <div class="indicator-item d-flex a-center">
+            <div class="indicator-bullet d-flex a-center j-center">
+              2
+            </div>
+            <p>Ваши цели</p>
+          </div>
+           <div class="indicator-line"></div>
+          <div class="indicator-item d-flex a-center">
+            <div class="indicator-bullet d-flex a-center j-center">
+                3
+            </div>
+            <p>Предпочтения</p>
+          </div>
+        </div>
+        <form action="#" class="forms">
+          <div class="step-form__content-wrapper" id="steps">
+            <div class="step-form__content">
+              <div class="step-content__wrap d-flex fl-direction a-center">
+                <h2 class="h2 mb-56">Информация о вас</h2>
+                <div class="ages">
+                  <div class="form-text">
+                    Возраст
+                  </div>
+                  <div class="age-list j-s-evenl fl-wrap d-flex">
+
+                    <label for="radio-1" class="border-item  d-flex j-center a-center">
+                      <div class="label-content d-flex a-center">
+                        18-25
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-1" value="18-25">
+                    </label>
+
+                    <label for="radio-2" class="border-item d-flex a-center j-center">
+                      <div class="label-content d-flex a-center">
+                        26 — 35
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-2" value="26-35">
+                    </label>
+
+                    <label for="radio-3" class="border-item d-flex a-center j-center">
+                      <div class="label-content d-flex a-center">
+                        36 — 45
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-3" value="36-45">
+                    </label>
+
+
+                    <label for="radio-4" class="border-item d-flex a-center j-center">
+                      <div class="label-content d-flex a-center">
+                        46 — 55
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-4" value="46-55">
+                    </label>
+
+
+                    <label for="radio-5" class="border-item d-flex a-center j-center">
+                      <div class="label-content d-flex a-center">
+                        56 — 65
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-5" value="46-55">
+                    </label>
+
+
+                    <label for="radio-6" class="border-item d-flex a-center j-center">
+                      <div class="label-content d-flex a-center">
+                        65+
+                        <label class="item-close">×</label>
+                      </div>
+                      <input type="radio" name="ages" id="radio-6" value="65+">
+                    </label>
+
+                  </div>
+                </div>
+                <div class="floor">
+                  <div class="form-text">
+                    Пол
+                  </div>
+                  <div class="floor-items d-flex">
+                    <div class="attr">
+                      <label for="radio-7" class="floor-item">
+                        <div class="floor-item__img">
+                          <img src="img/Зарядки1.png" alt="floor-pic">
+                        </div>
+                        <div class="floor-item__floo-name">
+                          Женский
+                        </div>
+                        <input type="radio" name="floor" id="radio-7" value="girl">
+                      </label>
+                    </div>
+                    <div class="attr">
+                      <label for="radio-8" class="floor-item">
+                        <div class="floor-item__img img-2">
+                          <img src="img/Зарядки2.png" alt="floor-pic">
+                        </div>
+                        <div class="floor-item__floo-name">
+                          Мужской
+                        </div>
+                        <input type="radio" name="floor" id="radio-8" value="man">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-send d-flex j-between">
+                <button class="button-step step-next button-step__background" name="next">Далее</button>
+              </div>
+            </div>
+            <div class="step-form__content hide">
+              <div class="step-content__wrap d-flex fl-direction a-center">
+                <h2 class="h2 mb-16">Какие у вас цели?</h2>
+                <div class="purposes d-flex fl-wrap a-center j-center">
+
+
+                  <label for="radio-9" class="purposes-item border-item pr d-flex j-center a-center"
+                    data-tab="#loseweight">
+                    <div class="label-content d-flex a-center">
+                      Сбросить вес
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-9" value="weight">
+                  </label>
+
+                  <label for="radio-10" class="purposes-item border-item pr d-flex j-center a-center"
+                    data-tab="#loseweight">
+                    <div class="label-content d-flex a-center">
+                      Стать энергичнее
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-10" value="ergetic">
+                  </label>
+
+                  <label for="radio-11" class="purposes-item border-item pr d-flex j-center a-center"
+                    data-tab="#loseweight">
+                    <div class="label-content d-flex a-center">
+                      Улучшить выносливость
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-11" value="endurance">
+                  </label>
+
+                  <label for="radio-12" class="purposes-item border-item pr d-flex j-center a-center"
+                    data-tab="#loseweight">
+                    <div class="label-content d-flex a-center">
+                      Снять напряжение
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-12" value="volt">
+                  </label>
+
+                  <label for="radio-13" class="purposes-item border-item pr d-flex j-center a-center"
+                    data-tab="#loseweight">
+                    <div class="label-content d-flex a-center">
+                      Улучшить сон
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-13" value="moon">
+                  </label>
+
+                  <label for="radio-14" class="purposes-item border-item pr d-flex j-center a-center" data-tab="#pump">
+                    <div class="label-content d-flex a-center">
+                      Накачать мышцы
+                      <label class="item-close">×</label>
+                    </div>
+                    <input type="checkbox" name="objective" id="radio-14" value="muscle">
+                  </label>
+                </div>
+                <div class="toggle-wrap" id="toggle-1">
+                  <div class="toggle" id="pump">
+                    <div class="form-text">
+                      Какие группы мышц
+                      вы хотите задействовать?
+                    </div>
+                    <div class="purposes-toggle d-flex fl-wrap a-center j-center j-s-evenl">
+
+                      <label for="radio-15" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Все основные
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-15" value="alls">
+                      </label>
+
+                      <label for="radio-16" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Верхние группы
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-16" value="topg">
+                      </label>
+
+                      <label for="radio-17" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Нижние группы
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-17" value="bottomg">
+                      </label>
+
+
+                      <label for="radio-18" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Мышцы животам
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-18" value="bellym">
+                      </label>
+
+                      <label for="radio-19" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Мыщцы таза и ягодиц
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-19" value="buttocks">
+                      </label>
+
+                      <label for="radio-20" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Мышцы шеи и плеч
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-20" value="neck">
+                      </label>
+
+                      <label for="radio-21" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Мышцы спины и поясницы
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-21" value="back">
+                      </label>
+
+                      <label for="radio-22" class="purposes-item border-item d-flex j-center a-center">
+                        <div class="label-content d-flex a-center">
+                          Икроножные мышцы
+                          <label class="item-close">×</label>
+                        </div>
+                        <input type="checkbox" name="musclegroups" id="radio-22" value="caviar">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-activity">
+                  <div class="form-text">
+                    Активность тренировок
+                  </div>
+                  <div class="trainig-items d-flex fl-wrap">
+                    <label for="radio-23" class="border-item d-flex j-center a-center">
+                      <div class="label-content d-flex a-center">
+                        <div class="item-check">
+                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.7002 12.6L9.5002 17.4L20.3002 6.59998" stroke="white" stroke-width="2"
+                              stroke-linecap="round" />
+                          </svg>
+                        </div>
+                        Интенсивны
+                      </div>
+                      <input type="radio" name="workoutactivity" id="radio-23" value="intence">
+                    </label>
+                    <label for="radio-24" class="border-item d-flex j-center a-center">
+                      <div class="label-content d-flex a-center">
+                        <div class="item-check">
+                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.7002 12.6L9.5002 17.4L20.3002 6.59998" stroke="white" stroke-width="2"
+                              stroke-linecap="round" />
+                          </svg>
+                        </div>
+                        Упрощённые
+                      </div>
+                      <input type="radio" name="workoutactivity" id="radio-24" value="simplify">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-send d-flex j-between">
+                <button class="button-step step-prev button-step__border">Назад</button>
+                <button class="button-step step-next button-step__background" name="next">Далее</button>
+              </div>
+            </div>
+            <div class="step-form__content hide">
+              <div class="step-content__wrap d-flex a-center fl-direction">
+                <h2 class="h2 mb-16">Предпочтения</h2>
+                <div class="form-text">
+                  В каком формате вам было бы удобно заниматься?
+                </div>
+                <div class="trainig-format d-flex fl-wrap">
+                  <label for="radio-25" class="border-item pr d-flex j-center a-center" data-tab="#online">
+                    <div class="item-check d-flex a-center j-center">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99967 1.33337C4.31967 1.33337 1.33301 4.32004 1.33301 8.00004C1.33301 11.68 4.31967 14.6667 7.99967 14.6667C11.6797 14.6667 14.6663 11.68 14.6663 8.00004C14.6663 4.32004 11.6797 1.33337 7.99967 1.33337ZM7.33301 13.2867C4.69967 12.96 2.66634 10.72 2.66634 8.00004C2.66634 7.58671 2.71967 7.19337 2.80634 6.80671L5.99967 10V10.6667C5.99967 11.4 6.59967 12 7.33301 12V13.2867ZM11.933 11.5934C11.7597 11.0534 11.2663 10.6667 10.6663 10.6667H9.99967V8.66671C9.99967 8.30004 9.69967 8.00004 9.33301 8.00004H5.33301V6.66671H6.66634C7.03301 6.66671 7.33301 6.36671 7.33301 6.00004V4.66671H8.66634C9.39967 4.66671 9.99967 4.06671 9.99967 3.33337V3.06004C11.953 3.85337 13.333 5.76671 13.333 8.00004C13.333 9.38671 12.7997 10.6467 11.933 11.5934Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <span class="item-text">Онлайн</span>
+                    <input type="radio" name="format" id="radio-25" value="online">
+                  </label>
+                  <label for="radio-26" class="border-item pr d-flex j-center a-center" data-tab="#floor">
+                    <div class="item-check d-flex a-center j-center">
+                      <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.33307 7.00004H10.6664L5.99974 0.333374L1.36641 7.00004H2.66641L0.0664062 11H4.67974V13.6667H7.31974V11H11.9997L9.33307 7.00004Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <span class="item-text">В парке</span>
+                    <input type="radio" name="format" id="radio-26" value="offline">
+                  </label>
+                </div>
+                <div class="overlay"></div>
+                <div class="toggle-wrap">
+                  <div class="toggle" id="floor">
+                    <div id="select"></div>
+                  </div>
+                  <div class="toggle" id="online">
+                    <div class="form-text">
+                      Контент
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-send send-format d-flex j-between">
+                <button class="button-step step-prev button-step__border">Назад</button>
+                <button class="button-step step-next send button-step__background" name="send"
+                  type="submit">Подобрать</button>
+              </div>
+            </div>
+            <div class="step-form__content hide">
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Шаги формы -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo"></div>
+      <div class="footer__contacts">
+        <div class="footer__email">
+          <p class="t-sm t-grey">Напишите нам</p><a class="t-sm" href="mailto:">support@sportsweekend.ru</a>
+        </div>
+        <div class="footer__socials socials"> <a class="socials__link" href="#">
+            <svg class="svgsprite _yt">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#yt"></use>
+            </svg>
+            <div class="t-sm">YouTube</div>
+          </a><a class="socials__link" href="#">
+            <svg class="svgsprite _tm">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#tm"></use>
+            </svg>
+            <div class="t-sm">Telegram</div>
+          </a><a class="socials__link" href="#">
+            <svg class="svgsprite _vk">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#vk"></use>
+            </svg>
+            <div class="t-sm">VKontakte</div>
+          </a></div>
+      </div>
+      <div class="footer__oragniztions">
+        <div class="footer__oragniztion"><img src="./assets/img/org-1.svg" alt=""></div>
+        <div class="footer__oragniztion"><img src="./assets/img/org-2.svg" alt=""></div>
+        <div class="footer__oragniztion"><img src="./assets/img/logo-footer.svg" alt=""></div>
+        <div class="footer__oragniztion"><img src="./assets/img/org-3.svg" alt=""></div>
+        <div class="footer__oragniztion"><img src="./assets/img/org-4.svg" alt=""></div>
+        <div class="footer__oragniztion"><img src="./assets/img/org-5.svg" alt=""></div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          <div class="copyright t-sm">© 2022 «Московский спорт» • </div><a class="policy t-sm t-grey" href="#">Политика
+            конфиденциальности</a>
+        </div>
+        <div class="footer__right">
+          <div class="age t-sm">18+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=177c4bad-4fa7-4ce7-972e-3666477be353&amp;lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="assets/js/vendors~main.bundle.js"></script>
+  <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
